@@ -2,9 +2,9 @@ import requests
 from twilio.rest import Client
 import os
 
-api_key = "fc39509735d16c387a703261ab6b8197"
-account_sid = 'AC435360369294021f4ab2b76872cd46cf'
-auth_token = '21d3dc5d756955ef479bc0d3dd3dc7e1'
+api_key = os.environ.get("API_KEY")
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 parameters = {
     "lat": 6.524379,
